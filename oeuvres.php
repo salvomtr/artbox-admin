@@ -3,7 +3,7 @@
 $oeuvres = [
     [
         'id' => 1,
-        'titre' => 'Dodomu',
+        'titre' => 'Duodom',
         'description' => 'Mia Tozerski est une artiste peintre ukrainienne réfugiée de la guerre. Sur cette œuvre, Dodomu ("domicile" en ukrainien), elle nous montre la tristesse du peuple ukrainien qu\'elle partage, ayant elle-même dû quitter son foyer. L\'œuvre évoque le drapeau liquéfié d\'une Ukraine en souffrance, pleurant la mort de ses compatriotes. Ce travail chargé d\'émotion est le symbole d\'un événement qui marquera l\'Histoire. Cette peinture à l\'acrylique rayonne grâce à son fond lisse et ses mélanges de couleurs éclatantes.',
         'artiste' => 'Mia Tozerski',
         'image' => 'img/clark-van-der-beken.png' // peut être modifié par une URL comme http://localhost/...
@@ -33,7 +33,7 @@ $oeuvres = [
         'id' => 5,
         'titre' => 'Red Washover',
         'description' => 'Nunc euismod ullamcorper tortor, id efficitur ante interdum in. Integer eu condimentum nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras viverra suscipit feugiat. Mauris vehicula luctus tellus, eu hendrerit libero laoreet ut. In tristique vehicula nisl in tempus. Morbi tempus aliquet gravida. In eget est congue, rhoncus sapien at, cursus metus.',
-        'artiste' => 'Kit Van Der Borght',
+        'artiste' => 'Kit VanBorght Der ',
         'image' => 'img/steve-johnson.png' // peut être modifié par une URL comme http://localhost/...
     ],
         [
