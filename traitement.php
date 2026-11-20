@@ -7,6 +7,7 @@ if (empty($_POST['titre'])
     || strlen($_POST['description']) < 3
     || !filter_var($_POST['image'], FILTER_VALIDATE_URL)) {
     header('Location: ajouter.php?erreur=true');
+    exit;
 } else {
     $titre = htmlspecialchars($_POST['titre']);
     $description = htmlspecialchars($_POST['description']);
@@ -20,4 +21,5 @@ if (empty($_POST['titre'])
     $requete->execute([$titre, $description, $artiste, $image]);
 
     header('Location: oeuvre.php?id=' . $bdd->lastInsertId());
+    exit;
 }

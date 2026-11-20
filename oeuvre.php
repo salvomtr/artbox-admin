@@ -1,22 +1,25 @@
 <?php
-    require 'header.php';
     require 'bdd.php';
 
-    $bdd = connexion();
-
     // Si l'URL ne contient pas d'id, on redirige sur la page d'accueil
-    if(empty($_GET['id'])) {
+    if (empty($_GET['id'])) {
         header('Location: index.php');
+        exit;
     }
+
+    $bdd = connexion();
 
     $requete = $bdd->prepare('SELECT * FROM oeuvres WHERE id = ?');
     $requete->execute([$_GET['id']]);
     $oeuvre = $requete->fetch();
 
-    // Si aucune oeuvre trouvé, on redirige vers la page d'accueil
-    if(is_null($oeuvre)) {
+    // Si aucune oeuvre trouvée, on redirige vers la page d'accueil
+    if (!$oeuvre) {
         header('Location: index.php');
+        exit;
     }
+
+    require 'header.php';
 ?>
 
 <article id="detail-oeuvre">
